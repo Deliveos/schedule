@@ -7,6 +7,10 @@ class Subject extends Table {
   public $active = 1;
 
   public function validate() {
-    return false;
+    if (!empty($this->name)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

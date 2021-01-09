@@ -42,7 +42,7 @@ require_once 'template/header.php'; ?>
           </select>
         </div>
         <?php if($role_id == 4 ) {
-          $groups = $groupMap->findAll(); ?>
+          $groups = $groupMap->getAll(); ?>
           <div class="form-group">
           <label>Группа</label>
           <select class="form-control" name="gruppa_id">
