@@ -5,6 +5,9 @@ class Student extends Table {
   public $num_zach = "";
 
   public function validate() {
+    if (!empty($this->num_zach)) {
+        return true;
+    }
     return false;
   }
 }

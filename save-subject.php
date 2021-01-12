@@ -1,5 +1,9 @@
 <?php
 require_once 'secure.php';
+if (!Helper::can('admin') && !Helper::can('manager')) {
+  header('Location: 404.php');
+  exit();
+}
 if (isset($_POST['subject_id'])) {
   $subject = new Subject();
   $subject->otdel_id = Helper::clearInt($_POST['otdel_id']);

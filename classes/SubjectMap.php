@@ -59,4 +59,9 @@ class subjectMap extends BaseMap {
       }
       return false;
   }
+
+  public function arrSubjects() {
+    $res = $this->db->query("SELECT subject_id AS id, name AS value FROM subject");
+    return $res->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

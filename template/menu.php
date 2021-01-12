@@ -7,8 +7,12 @@
       </li>
       <li class="header">Пользователи</li>
         <li 
-          <?=($_SERVER['PHP_SELF']=='/list-user.php')?'class="active"':'';?>>
-          <a href="list-user.php"><i class="fa fa-users"></i><span>Пользователи</span></a>
+          <?=($_SERVER['PHP_SELF']=='/list-teacher.php')?'class="active"':'';?>>
+          <a href="list-teacher.php"><i class="fa fa-users"></i><span>Преподаватели</span></a>
+        </li>
+        <li 
+          <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
+          <a href="list-student.php"><i class="fa fa-users"></i><span>Студенты</span></a>
         </li>
       <li class="header">Справочники</li>
         <li 
@@ -30,6 +34,11 @@
         <li 
           <?=($_SERVER['PHP_SELF']=='/list-classroom.php')?'class="active"':'';?>>
           <a href="list-classroom.php"><i class="fa fa-book"></i><span>Аудитории</span></a>
+        </li>
+        <li class="header">Управление расписанием</li>
+        <li 
+          <?=($_SERVER['PHP_SELF']=='/list-teacher-schedule.php')?'class="active"':'';?>>
+          <a href="list-teacher-schedule.php"><i class="fa fa-table"></i><span>Расписание и планы</span></a>
         </li>
     </ul>
   </section>
